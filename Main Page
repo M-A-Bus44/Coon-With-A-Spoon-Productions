@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COON WITH A SPOON PRODUCTIONS</title>
+    <style>
+        :root {
+            --bg-color: #f4f1ea;
+            --ink-color: #111111;
+            --border-color: #111111;
+            --highlight: #b52b2b;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--ink-color);
+            font-family: "Courier New", Courier, monospace;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.4;
+        }
+
+        .newspaper-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            border: 4px solid var(--border-color);
+            padding: 20px;
+            background-color: #fdfbf7;
+            box-shadow: 8px 8px 0px rgba(0,0,0,0.8);
+        }
+
+        /* Header / Masthead */
+        header {
+            text-align: center;
+            border-bottom: 3px double var(--border-color);
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+
+        .masthead-info {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            margin: 10px 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 900;
+        }
+
+        .tagline {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-weight: bold;
+            color: var(--highlight);
+        }
+
+        /* Layout Grid */
+        .grid-layout {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .grid-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        section {
+            border: 1px solid var(--border-color);
+            padding: 15px;
+            margin-bottom: 20px;
+            background: #ffffff;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            border-bottom: 2px solid var(--border-color);
+            margin-top: 0;
+            padding-bottom: 5px;
+            background-color: var(--ink-color);
+            color: var(--bg-color);
+            padding-left: 5px;
+        }
+
+        /* Articles & Headlines */
+        .lead-story h3 {
+            font-size: 1.6rem;
+            margin: 5px 0 10px 0;
+            line-height: 1.1;
+        }
+
+        .story-meta {
+            font-size: 0.75rem;
+            font-weight: bold;
+            color: var(--highlight);
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        p {
+            font-size: 0.95rem;
+            text-align: justify;
+            margin-bottom: 10px;
+        }
+
+        .secondary-stories ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .secondary-stories li {
+            border-bottom: 1px dashed var(--border-color);
+            padding: 10px 0;
+        }
+
+        .secondary-stories li:last-child {
+            border-bottom: none;
+        }
+
+        .secondary-stories h4 {
+            margin: 0 0 5px 0;
+            font-size: 1.1rem;
+        }
+
+        .page-tag {
+            float: right;
+            font-weight: bold;
+            font-size: 0.8rem;
+            background: var(--ink-color);
+            color: white;
+            padding: 1px 5px;
+        }
+
+        /* Index / Directory sidebar */
+        .sidebar-box {
+            border: 2px solid var(--border-color);
+            padding: 10px;
+            margin-bottom: 15px;
+            background: #f4f1ea;
+        }
+
+        .sidebar-box h3 {
+            margin-top: 0;
+            font-size: 1rem;
+            text-transform: uppercase;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 5px;
+        }
+
+        .district-list {
+            list-style: square;
+            padding-left: 20px;
+            font-size: 0.85rem;
+            margin: 0;
+        }
+
+        .district-list li {
+            margin-bottom: 6px;
+        }
+
+        .district-list a {
+            color: var(--ink-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .district-list a:hover {
+            background: var(--ink-color);
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            border-top: 2px solid var(--border-color);
+            margin-top: 20px;
+            padding-top: 10px;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+
+<div class="newspaper-container">
+    
+    <!-- Masthead -->
+    <header>
+        <div class="masthead-info">
+            <span>Multimedia Archive</span>
+            <span>Studio 616 Base</span>
+            <span>No Algorithms &bull; Pure Sandbox</span>
+        </div>
+        <h1>Coon With A Spoon Productions</h1>
+        <div class="tagline">The Multiverse Hub &bull; Setting: Stone Jug</div>
+    </header>
+
+    <!-- Main Grid Layout -->
+    <div class="grid-layout">
+        
+        <!-- Left Column: Main Content / Pillars -->
+        <div>
+            <!-- Lead Story -->
+            <section class="lead-story">
+                <div class="story-meta">Project Pillar &bull; Confessions of a Cereal Killer</div>
+                <h3>INSIDE THE BORDERLINES OF STONE JUG: INDUSTRIAL COLLAPSE & THE RUST-BELT OUTSKIRTS</h3>
+                <p>Welcome to Coon With A Spoon Productions. This hub hosts our independent multimedia projects, anchored by the open-world sandbox of Stone Jug. Explore raw social commentary, local histories pulled straight from real asphalt, and district-by-district archives where every door opens.</p>
+                <a href="#" style="font-weight: bold; color: var(--ink-color); text-transform: uppercase; font-size: 0.85rem;">[Enter the Archive &rarr;]</a>
+            </section>
+
+            <!-- Secondary Stories -->
+            <section class="secondary-stories">
+                <h2>Multiverse Broadcasts & Pillars</h2>
+                <ul>
+                    <li>
+                        <span class="page-tag">P. 02</span>
+                        <h4>Where the Sidewalk's End</h4>
+                        <p style="font-size: 0.85rem; margin-bottom:5px;">A conceptual double-album of acoustic grit, flat farmland anthems, and roadside debris.</p>
+                    </li>
+                    <li>
+                        <span class="page-tag">P. 03</span>
+                        <h4>The Crimson Spiral</h4>
+                        <p style="font-size: 0.85rem; margin-bottom:5px;">A cursed grimoire and occult narrative artifact operating out of the darker corners of the map.</p>
+                    </li>
+                    <li>
+                        <span class="page-tag">P. 04</span>
+                        <h4>Ashgrove Heights Outpost Notes</h4>
+                        <p style="font-size: 0.85rem; margin-bottom:5px;">Current perimeter tracking and local observations from the Hastings outskirts.</p>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Right Column: Navigation / Master Map Index -->
+        <div>
+            <div class="sidebar-box" style="background: var(--ink-color); color: white;">
+                <h3 style="color: white; border-color: white;">STONE JUG MASTER MAP</h3>
+                <p style="font-size: 0.8rem; margin-bottom: 10px;">Select a district sector to access local files, lore, and sandbox entry points:</p>
+                <ul class="district-list" style="color: #f4f1ea;">
+                    <li><a href="#" style="color: white;">SJ/DT: Stone Jug Proper / Downtown</a></li>
+                    <li><a href="#" style="color: white;">MPW: Milpond Ward (Nashville Roots)</a></li>
+                    <li><a href="#" style="color: white;">CH: Cypress Hollow (Middleville)</a></li>
+                    <li><a href="#" style="color: white;">AH: Ashgrove Heights (Hastings)</a></li>
+                    <li><a href="#" style="color: white;">BF: Briarville Flats (Farmland)</a></li>
+                    <li><a href="#" style="color: white;">LH: Lincoln Heights</a></li>
+                    <li><a href="#" style="color: white;">SBD: South Business District</a></li>
+                    <li><a href="#" style="color: white;">IP: Industrial Park</a></li>
+                    <li><a href="#" style="color: white;">CP: Cherry Pass & Hyman Woods</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-box">
+                <h3>The Sandbox Rule</h3>
+                <p style="font-size: 0.8rem;">Every district is active. Build your stories, trace your routes, and drop your lore into the grid. No corporate gatekeeping.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Coon With A Spoon Productions / Studio 616. All rights reserved to the underground.</p>
+    </footer>
+
+</div>
+
+</body>
+</html>
